@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Smart</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__label">
+                <h1>welcome to smart</h1>
+            </div>
+            <div class="header__search">
+                <input class="header__search__input" type="text" name="search" id="search" placeholder="search">
+                <button class="header__search__btn" type="submit">
+                    <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="header__notifs">
+                <div>
+                    <button class="header__notifs__btn">
+                        <ion-icon class="header__notifs__icon" name="notifications-outline"></ion-icon>
+                    </button>
+                    <span class="header__notifs__badge"></span>
+                </div>
+                <div>
+                    <button class="header__notifs__btn">
+                        <ion-icon class="header__notifs__icon" name="chatbox-outline"></ion-icon>
+                    </button>
+                    <span class="header__notifs__badge"></span>
+                </div>
+            </div>
+            <div class="header__user">
+                <button class="header__user__btn">
+                    <ion-icon name="person-circle-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+
+        <div class="sidenav">
+            <div class="sidenav__background"></div>
+            <div class="sidenav__logo">
+                <img src="./assets/logos/smart-logo.svg" alt="smart logo" width="50">
+            </div>
+            <ul class="sidenav__menu">
+                <li class="sidenav__menu__item sidenav__menu__item--selected">
+                    <span>dashboard</span>
+                </li>
+                <li class="sidenav__menu__item">
+                    <span>students</span>
+                </li>
+                <li class="sidenav__menu__item">
+                    <span>teachers</span>
+                </li>
+                <li class="sidenav__menu__item">
+                    <span>parents</span>
+                </li>
+                <li class="sidenav__menu__item">
+                    <span>library</span>
+                </li>
+                <li class="sidenav__menu__item">
+                    <span>attendance</span>
+                </li>
+                <li class="sidenav__menu__item">
+                    <span>exam</span>
+                </li>
+                <li class="sidenav__menu__item">
+                    <span>hostel</span>
+                </li>
+                <li class="sidenav__menu__item">
+                    <span>account</span>
+                </li>
+                <li class="sidenav__menu__item">
+                    <span>settings</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <div class="analytics">
+                <div class="analytics__card analytics__card__schools">
+                    <div class="analytics__card__logo analytics__schools__logo">
+                        <img src="./assets/logos/school.svg" alt="school" width="40">
+                    </div>
+                    <div class="analytics__card__border"></div>
+                    <div class="analytics__card__content analytics__schools__content">
+                        <h3>schools</h3>
+                        <span>9000</span>
+                    </div>
+                </div>
+                <div class="analytics__card analytics__card__students">
+                    <div class="analytics__card__logo analytics__students__logo">
+                        <img src="./assets/logos/student.svg" alt="student" width="40">
+                    </div>
+                    <div class="analytics__card__border"></div>
+                    <div class="analytics__card__content analytics__students__content">
+                        <h3>students</h3>
+                        <span>23456</span>
+                    </div>
+                </div>
+                <div class="analytics__card analytics__card__teachers">
+                    <div class="analytics__card__logo analytics__teachers__logo">
+                        <img src="./assets/logos/teacher.svg" alt="teacher" width="55">
+                    </div>
+                    <div class="analytics__card__border"></div>
+                    <div class="analytics__card__content analytics__teachers__content">
+                        <h3>teachers</h3>
+                        <span>7400</span>
+                    </div>
+                </div>
+                <div class="analytics__card analytics__card__parents">
+                    <div class="analytics__card__logo analytics__parents__logo">
+                        <img src="./assets/logos/parent.svg" alt="parent" width="40">
+                    </div>
+                    <div class="analytics__card__border"></div>
+                    <div class="analytics__card__content analytics__parents__content">
+                        <h3>parents</h3>
+                        <span>90990</span>
+                    </div>
+                </div>
+            </div>
+            <div class="divers">
+                <div class="divers__col">
+                    <div class="divers__card calendar">
+                        <div class="calendar__header">
+                            <h3>calendar & attendance</h3>
+                        </div>
+                        <div class="calendar__content">
+                            <div class="calendar__header">
+                                <button class="calendar__header__button calendar__header__button--selected"><span>&lt;</span></button>
+                                <span class="calendar__header__date">08 March, 2022</span>
+                                <button class="calendar__header__button"><span>&gt;</span></button>
+                            </div>
+                            <table class="calendar__table">
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__table--grey">29</td>
+                                    <td class="calendar__table--grey">30</td>
+                                    <td>01</td>
+                                    <td><span class="calendar__table--event calendar__table--event-1">02</span></td>
+                                    <td>03</td>
+                                    <td>04</td>
+                                    <td>05</td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td>07</td>
+                                    <td>08</td>
+                                    <td>09</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td><span class="calendar__table--event calendar__table--event-2">24</span></td>
+                                    <td>25</td>
+                                    <td>
+
+                                        <span class="calendar__table--range calendar__table--range-start"></span>
+                                        <span class="calendar__table--event calendar__table--event-3">26</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="calendar__table--range"></span>
+                                        <span class="calendar__table--event calendar__table--event-3">27</span>
+                                    </td>
+                                    <td>
+                                        <span class="calendar__table--range"></span>
+                                        <span class="calendar__table--event calendar__table--event-3">28</span>
+                                    </td>
+                                    <td>
+                                        <span class="calendar__table--range calendar__table--range-end"></span>
+                                        <span class="calendar__table--event calendar__table--event-3">29</span>
+                                    </td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td class="calendar__table--grey">01</td>
+                                    <td class="calendar__table--grey">02</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="divers__card notification">
+                        <div class="notification__header">
+                            <h3 class="notification__header__title">activities notification</h3>
+                            <button class="notification__header__button">view all</button>
+                        </div>
+                        <div class="notification__content">
+                            <div class="notification__content__item">
+                                <h4 class="notification__content__item__title">st. xavier school</h4>
+                                <span class="notification__content__item__date">02 Oct. 2021</span>
+                                <p class="notification__content__item__detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, recusandae repellendus eius impedit, nesciunt dolorum necessitatibus harum nemo.</p>
+                            </div>
+                            <div class="notification__content__item">
+                                <h4 class="notification__content__item__title">podar international school</h4>
+                                <span class="notification__content__item__date">01 Oct. 2021</span>
+                                <p class="notification__content__item__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Verit aliquid neque fuga culpa quaerat provident, harum explicabo, sunt aut ipsum unde</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divers__card performance">
+                        <div class="performance__header">
+                            <h3>school performance</h3>
+                            <span>All the data in percentage (%)</span>
+                        </div>
+                        <div class="performance__content">
+                            <div class="performance__content__legend">
+                                <div class="performance__content__legend__item performance__content__legend__item__govt">
+                                    <div>
+                                        <h4>govt. school</h4>
+                                        <span>performance</span>
+                                    </div>
+                                </div>
+                                <div class="performance__content__legend__item performance__content__legend__item__private">
+                                    <div>
+                                        <h4>private school</h4>
+                                        <span>performance</span>
+                                    </div>
+                                </div>
+                                <div class="performance__content__legend__item performance__content__legend__item__average">
+                                    <div>
+                                        <h4>average school</h4>
+                                        <span>performance</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="performance__content__chart">
+                                <div class="plot">
+                                    <div class="level">
+                                        <div class="percent">100</div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="percent">75</div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="percent">50</div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="percent">25</div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="percent">00</div>
+                                        <div class="block"></div>
+                                    </div>
+                                </div>
+                                <div class="data-points">
+                                    <div class="data-point govt">
+                                    </div>
+                                    <div class="data-point private">
+                                    </div>
+                                    <div class="data-point average">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divers__card score">
+                        <div class="score__header">
+                            <h3>top score</h3>
+                            <select class="score__header__select" name="years" id="year-select">
+                                <option value="2022-2021">2022-2021</option>
+                                <option value="2021-2020">2022-2021</option>
+                                <option value="2020-2019">2020-2019</option>
+                                <option value="2020-2019">2019-2018</option>
+                            </select>
+                        </div>
+                        <div class="score__content">
+                            <div class="score__content__card score__content__card__1st">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                                <p class="name">levi meir</p>
+                                <p class="school">st. xavier school</p>
+                                <p class="score">99.90%</p>
+                                <p class="level">1st</p>
+                            </div>
+                            <div class="score__content__card score__content__card__2nd">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                                <p class="name">charon mc</p>
+                                <p class="school">polar school</p>
+                                <p class="score">99.76%</p>
+                                <p class="level">2nd</p>
+                            </div>
+                            <div class="score__content__card score__content__card__3rd">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                                <p class="name">janko ferlic</p>
+                                <p class="school">doon institute</p>
+                                <p class="score">99.50%</p>
+                                <p class="level">3rd</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divers__col">
+                    <div class="divers__card performance">
+                        <div class="performance__header">
+                            <h3>school performance</h3>
+                            <span>All the data in percentage (%)</span>
+                        </div>
+                        <div class="performance__content">
+                            <div class="performance__content__legend">
+                                <div class="performance__content__legend__item performance__content__legend__item__govt">
+                                    <div>
+                                        <h4>govt. school</h4>
+                                        <span>performance</span>
+                                    </div>
+                                </div>
+                                <div class="performance__content__legend__item performance__content__legend__item__private">
+                                    <div>
+                                        <h4>private school</h4>
+                                        <span>performance</span>
+                                    </div>
+                                </div>
+                                <div class="performance__content__legend__item performance__content__legend__item__average">
+                                    <div>
+                                        <h4>average school</h4>
+                                        <span>performance</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="performance__content__chart">
+                                <div class="plot">
+                                    <div class="level">
+                                        <div class="percent">100</div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="percent">75</div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="percent">50</div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="percent">25</div>
+                                        <div class="block"></div>
+                                    </div>
+                                    <div class="level">
+                                        <div class="percent">00</div>
+                                        <div class="block"></div>
+                                    </div>
+                                </div>
+                                <div class="data-points">
+                                    <div class="data-point govt">
+                                    </div>
+                                    <div class="data-point private">
+                                    </div>
+                                    <div class="data-point average">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divers__card score">
+                        <div class="score__header">
+                            <h3>top score</h3>
+                            <select class="score__header__select" name="years" id="year-select">
+                                <option value="2022-2021">2022-2021</option>
+                                <option value="2021-2020">2022-2021</option>
+                                <option value="2020-2019">2020-2019</option>
+                                <option value="2020-2019">2019-2018</option>
+                            </select>
+                        </div>
+                        <div class="score__content">
+                            <div class="score__content__card score__content__card__1st">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                                <p class="name">levi meir</p>
+                                <p class="school">st. xavier school</p>
+                                <p class="score">99.90%</p>
+                                <p class="level">1st</p>
+                            </div>
+                            <div class="score__content__card score__content__card__2nd">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                                <p class="name">charon mc</p>
+                                <p class="school">polar school</p>
+                                <p class="score">99.76%</p>
+                                <p class="level">2nd</p>
+                            </div>
+                            <div class="score__content__card score__content__card__3rd">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                                <p class="name">janko ferlic</p>
+                                <p class="school">doon institute</p>
+                                <p class="score">99.50%</p>
+                                <p class="level">3rd</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divers__card calendar">
+                        <div class="calendar__title">
+                            <h3>calendar & attendance</h3>
+                        </div>
+                        <div class="calendar__content">
+                            <div class="calendar__header">
+                                <button class="calendar__header__button calendar__header__button--selected"><span>&lt;</span></button>
+                                <span class="calendar__header__date">08 March, 2022</span>
+                                <button class="calendar__header__button"><span>&gt;</span></button>
+                            </div>
+                            <table class="calendar__table">
+                                <tr>
+                                    <th>Sun</th>
+                                    <th>Mon</th>
+                                    <th>Tue</th>
+                                    <th>Wed</th>
+                                    <th>Thu</th>
+                                    <th>Fri</th>
+                                    <th>Sat</th>
+                                </tr>
+                                <tr>
+                                    <td class="calendar__table--grey">29</td>
+                                    <td class="calendar__table--grey">30</td>
+                                    <td>01</td>
+                                    <td><span class="calendar__table--event calendar__table--event-1">02</span></td>
+                                    <td>03</td>
+                                    <td>04</td>
+                                    <td>05</td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td>07</td>
+                                    <td>08</td>
+                                    <td>09</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                </tr>
+                                <tr>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                    <td><span class="calendar__table--event calendar__table--event-2">24</span></td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="calendar__table--event calendar__table--event-3">27</span>
+                                    </td>
+                                    <td>
+                                        <span class="calendar__table--event calendar__table--event-3">28</span>
+                                    </td>
+                                    <td>
+                                        <span class="calendar__table--event calendar__table--event-3">29</span>
+                                    </td>
+                                    <td>30</td>
+                                    <td>31</td>
+                                    <td class="calendar__table--grey">01</td>
+                                    <td class="calendar__table--grey">02</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="divers__card notification">
+                        <div class="notification__header">
+                            <h3 class="notification__header__title">activities notification</h3>
+                            <button class="notification__header__button">view all</button>
+                        </div>
+                        <div class="notification__content">
+                            <div class="notification__content__item">
+                                <h4 class="notification__content__item__title">st. xavier school</h4>
+                                <span class="notification__content__item__date">02 Oct. 2021</span>
+                                <p class="notification__content__item__detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, recusandae repellendus eius impedit, nesciunt dolorum necessitatibus harum nemo.</p>
+                            </div>
+                            <div class="notification__content__item">
+                                <h4 class="notification__content__item__title">podar international school</h4>
+                                <span class="notification__content__item__date">01 Oct. 2021</span>
+                                <p class="notification__content__item__detail">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Verit aliquid neque fuga culpa quaerat provident, harum explicabo, sunt aut ipsum unde</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

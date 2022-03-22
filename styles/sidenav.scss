@@ -1,0 +1,43 @@
+@import './variables.scss';
+.sidenav {
+    background: url('../assets/bg/sidenav-bg.jpeg') bottom right;
+    color: $white;
+    display: grid;
+    gap: 3rem;
+    grid-template-rows: 100px auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    &__background {
+        background: linear-gradient($primary 50%, rgba(255, 255, 255, 0.3));
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -10;
+    }
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__menu {
+        font-weight: 400;
+        font-size: $regular-font-size;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: auto;
+        &__item {
+            padding: 1rem;
+            border: none;
+            &--selected {
+                background-color: $light-grey;
+                color: $primary;
+                border-radius: $menu-item-raduis;
+            }
+        }
+    }
+}

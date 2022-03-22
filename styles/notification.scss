@@ -1,0 +1,45 @@
+@import './variables.scss';
+.notification {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-rows: 30px auto;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__title {}
+        &__button {
+            background-color: transparent;
+            color: $accent-1;
+            border: 1px solid $accent-1;
+            border-radius: $button-raduis;
+            padding: 4px 15px;
+            font-size: small;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            border-bottom: 1px solid $light-grey;
+            padding-bottom: 1.2rem;
+            &__title {
+                font-weight: 400;
+            }
+            &__date {
+                font-size: smaller;
+            }
+            &__detail {
+                color: $grey;
+                font-size: small;
+            }
+            &:last-child {
+                border: none;
+            }
+        }
+    }
+}

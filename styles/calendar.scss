@@ -1,0 +1,83 @@
+@import './variables.scss';
+.calendar {
+    font-size: $regular-font-size;
+    display: flex;
+    flex-direction: column;
+    &__header {
+        padding-bottom: 1rem;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    &__header {
+        text-align: center;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__date {
+            font-size: small;
+            font-weight: 400;
+        }
+        &__button {
+            font-size: small;
+            padding: 0 14px;
+            border-radius: $button-raduis;
+            border: none;
+            &--selected {
+                color: $white;
+                background-color: $accent-3;
+            }
+        }
+    }
+    &__table {
+        th {
+            text-align: center;
+            padding: .5rem .7rem;
+            font-size: $small-font-size;
+            font-weight: 400;
+            border: 1px solid $light-grey;
+            border-radius: $card-raduis;
+        }
+        td {
+            text-align: center;
+            padding: .5rem 0;
+            font-size: $small-font-size;
+            position: relative;
+        }
+        &--grey {
+            color: $grey;
+        }
+        &--event {
+            color: $white;
+            padding: 0.3rem;
+            border-radius: 50%;
+            font-size: $small-font-size;
+        }
+        &--event-1 {
+            background-color: $accent-1;
+        }
+        &--event-2 {
+            background-color: $accent-2;
+        }
+        &--event-3 {
+            background-color: $accent-1;
+        }
+        &--range {
+            background-color: $accent-1-light;
+            background-color: #55cc74;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        &--range-start {
+            border-radius: 50% 0 0 50%;
+        }
+        &--range-end {
+            border-radius: 0 50% 50% 0;
+        }
+    }
+}

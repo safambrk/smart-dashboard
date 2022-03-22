@@ -1,0 +1,81 @@
+@import './variables.scss';
+.header {
+    background-color: $white;
+    height: $header-height;
+    border-radius: $header-raduis;
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+    grid-template-columns: 25% auto 10% 9%;
+    position: sticky;
+    top: 0;
+    &__label {
+        text-align: center;
+    }
+    &__search {
+        &__input {
+            width: 220px;
+            height: 21px;
+            padding: 6px;
+            font-size: $small-font-size;
+            background-color: $light-grey;
+            border: none;
+            border-radius: $card-raduis;
+        }
+        &__btn {
+            width: 50px;
+            height: 21px;
+            padding: 2px;
+            background-color: $primary;
+            color: white;
+            border: none;
+            border-radius: $card-raduis;
+            position: relative;
+            right: 15px;
+            top: 3px;
+        }
+    }
+    &__notifs {
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-around;
+        border-right: 1px solid $grey;
+        border-left: 1px solid $grey;
+        div {
+            position: relative;
+        }
+        &__btn {
+            border: none;
+            border-radius: 50%;
+            padding: .3rem;
+            display: flex;
+            align-items: center;
+            background-color: $light-grey;
+        }
+        &__icon {
+            color: $primary;
+        }
+        &__badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: '';
+            height: 7px;
+            width: 7px;
+            border-radius: 50%;
+            background-color: $primary;
+        }
+    }
+    &__user {
+        text-align: center;
+        &__btn {
+            border: 0;
+            background-color: $white;
+            ion-icon {
+                color: $primary;
+                font-size: $big-font-size;
+            }
+        }
+    }
+}

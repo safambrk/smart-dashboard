@@ -1,0 +1,537 @@
+.container {
+  background-color: #eeeff1;
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 50px auto;
+  grid-template-areas: "sidenav header" "sidenav content";
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+.header {
+  grid-area: header;
+  width: 95%;
+  margin: auto;
+}
+
+.content {
+  grid-area: content;
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-rows: 90px auto;
+}
+
+.header {
+  background-color: #fff;
+  height: 50px;
+  border-radius: 0 0 15px 15px;
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  grid-template-columns: 25% auto 10% 9%;
+  position: sticky;
+  top: 0;
+}
+.header__label {
+  text-align: center;
+}
+.header__search__input {
+  width: 220px;
+  height: 21px;
+  padding: 6px;
+  font-size: 12px;
+  background-color: #eeeff1;
+  border: none;
+  border-radius: 12px;
+}
+.header__search__btn {
+  width: 50px;
+  height: 21px;
+  padding: 2px;
+  background-color: #524583;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  position: relative;
+  right: 15px;
+  top: 3px;
+}
+.header__notifs {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-around;
+  border-right: 1px solid #acacac;
+  border-left: 1px solid #acacac;
+}
+.header__notifs div {
+  position: relative;
+}
+.header__notifs__btn {
+  border: none;
+  border-radius: 50%;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  background-color: #eeeff1;
+}
+.header__notifs__icon {
+  color: #524583;
+}
+.header__notifs__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #524583;
+}
+.header__user {
+  text-align: center;
+}
+.header__user__btn {
+  border: 0;
+  background-color: #fff;
+}
+.header__user__btn ion-icon {
+  color: #524583;
+  font-size: 34px;
+}
+
+.sidenav {
+  background: url("../assets/bg/sidenav-bg.jpeg") bottom right;
+  color: #fff;
+  display: grid;
+  gap: 3rem;
+  grid-template-rows: 100px auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.sidenav__background {
+  background: linear-gradient(#524583 50%, rgba(255, 255, 255, 0.3));
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+}
+.sidenav__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidenav__menu {
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: auto;
+}
+.sidenav__menu__item {
+  padding: 1rem;
+  border: none;
+}
+.sidenav__menu__item--selected {
+  background-color: #eeeff1;
+  color: #524583;
+  border-radius: 20px 0 0 20px;
+}
+
+.analytics {
+  margin-top: 0.6rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.analytics__card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.analytics__card__border {
+  position: relative;
+  top: 0;
+  right: 0;
+  content: "";
+  height: 35px;
+  width: 1px;
+  background: #acacac;
+}
+.analytics__card__content h3 {
+  font-size: 12px;
+}
+.analytics__card__content span {
+  font-weight: bolder;
+  font-size: 21px;
+}
+.analytics__card__schools {
+  border-left: 4px solid #ef7e77;
+}
+.analytics__card__students {
+  border-left: 4px solid #524583;
+}
+.analytics__card__teachers {
+  border-left: 4px solid #ffb800;
+}
+.analytics__card__parents {
+  border-left: 4px solid #37ad54;
+}
+
+.divers {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.divers__col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.divers__card {
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.calendar {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.calendar__header {
+  padding-bottom: 1rem;
+}
+.calendar__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.calendar__header {
+  text-align: center;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calendar__header__date {
+  font-size: small;
+  font-weight: 400;
+}
+.calendar__header__button {
+  font-size: small;
+  padding: 0 14px;
+  border-radius: 20px;
+  border: none;
+}
+.calendar__header__button--selected {
+  color: #fff;
+  background-color: #ef7e77;
+}
+.calendar__table th {
+  text-align: center;
+  padding: 0.5rem 0.7rem;
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid #eeeff1;
+  border-radius: 12px;
+}
+.calendar__table td {
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 12px;
+  position: relative;
+}
+.calendar__table--grey {
+  color: #acacac;
+}
+.calendar__table--event {
+  color: #fff;
+  padding: 0.3rem;
+  border-radius: 50%;
+  font-size: 12px;
+}
+.calendar__table--event-1 {
+  background-color: #37ad54;
+}
+.calendar__table--event-2 {
+  background-color: #ffb800;
+}
+.calendar__table--event-3 {
+  background-color: #37ad54;
+}
+.calendar__table--range {
+  background-color: #55cc74;
+  background-color: #55cc74;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.calendar__table--range-start {
+  border-radius: 50% 0 0 50%;
+}
+.calendar__table--range-end {
+  border-radius: 0 50% 50% 0;
+}
+
+.performance__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.performance__header span {
+  color: #acacac;
+  font-size: small;
+}
+.performance__content {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 40% auto;
+  align-items: center;
+}
+.performance__content__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.performance__content__legend__item {
+  display: flex;
+  gap: 1rem;
+}
+.performance__content__legend__item::before {
+  display: block;
+  content: "";
+  position: relative;
+  top: 10px;
+  right: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+.performance__content__legend__item h4 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.performance__content__legend__item span {
+  color: #acacac;
+  font-size: small;
+}
+.performance__content__legend__item__govt::before {
+  background-color: #524583;
+}
+.performance__content__legend__item__private::before {
+  background-color: #ffb800;
+}
+.performance__content__legend__item__average::before {
+  background-color: #37ad54;
+}
+.performance__content__chart {
+  position: relative;
+}
+.performance__content__chart .plot .level {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.performance__content__chart .plot .percent {
+  flex: 1;
+  text-align: right;
+  vertical-align: text-top;
+  color: #acacac;
+}
+.performance__content__chart .plot .block {
+  flex: 9;
+  border-top: 1px solid #eeeff1;
+  height: 30px;
+  width: 100%;
+  margin-top: 8px;
+}
+.performance__content__chart .data-points .data-point {
+  width: 30px;
+  position: absolute;
+  bottom: 30px;
+}
+.performance__content__chart .data-points .govt {
+  left: 80%;
+  height: calc(72% - 30px);
+  background-color: #37ad54;
+  box-shadow: 5px -5px 8px #55cc74;
+}
+.performance__content__chart .data-points .private {
+  left: 50%;
+  height: calc(47% - 30px);
+  background-color: #ffb800;
+  box-shadow: 5px -5px 8px #ecc560;
+}
+.performance__content__chart .data-points .average {
+  left: 20%;
+  height: calc(97% - 30px);
+  background-color: #524583;
+  box-shadow: 5px -5px 8px #6b6092;
+}
+
+.notification {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-rows: 30px auto;
+}
+.notification__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.notification__header__button {
+  background-color: transparent;
+  color: #37ad54;
+  border: 1px solid #37ad54;
+  border-radius: 20px;
+  padding: 4px 15px;
+  font-size: small;
+}
+.notification__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.notification__content__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: 1px solid #eeeff1;
+  padding-bottom: 1.2rem;
+}
+.notification__content__item__title {
+  font-weight: 400;
+}
+.notification__content__item__date {
+  font-size: smaller;
+}
+.notification__content__item__detail {
+  color: #acacac;
+  font-size: small;
+}
+.notification__content__item:last-child {
+  border: none;
+}
+
+.score {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+.score__header {
+  display: flex;
+  justify-content: space-between;
+}
+.score__header__select {
+  border: 1px solid #acacac;
+  border-radius: 20px;
+  font-size: small;
+  font-weight: 400;
+  padding: 5px;
+  background-color: transparent;
+}
+.score__content {
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+.score__content__card {
+  background-color: #524583;
+  color: #fff;
+  border-radius: 12px;
+  height: 200px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+.score__content__card ion-icon {
+  font-size: 55px;
+}
+.score__content__card .name {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.score__content__card .school {
+  text-transform: capitalize;
+  font-size: 11px;
+}
+.score__content__card .score {
+  font-weight: 500;
+  font-size: 21px;
+}
+.score__content__card .level {
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 98%;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  border-radius: 12px;
+}
+.score__content__card__1st {
+  background-color: #37ad54;
+}
+.score__content__card__2nd {
+  background-color: #524583;
+}
+.score__content__card__3rd {
+  background-color: #ffb800;
+}
+.score__content__card__3rd .level {
+  background-color: rgba(168, 168, 168, 0.473);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font-family: "Fredoka", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=styles.css.map */

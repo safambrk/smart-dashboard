@@ -1,0 +1,28 @@
+@import './variables.scss';
+.container {
+    background-color: $light-grey;
+    display: grid;
+    gap: .8rem;
+    grid-template-columns: 200px auto;
+    grid-template-rows: $header-height auto;
+    grid-template-areas: "sidenav header" "sidenav content";
+}
+
+.sidenav {
+    grid-area: sidenav;
+}
+
+.header {
+    grid-area: header;
+    width: 95%;
+    margin: auto;
+}
+
+.content {
+    grid-area: content;
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-rows: 90px auto;
+}

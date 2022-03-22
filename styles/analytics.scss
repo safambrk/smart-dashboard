@@ -1,0 +1,43 @@
+@import './variables.scss';
+.analytics {
+    margin-top: .6rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    &__card {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $white;
+        border-radius: $card-raduis;
+        &__logo {}
+        &__border {
+            position: relative;
+            top: 0;
+            right: 0;
+            content: '';
+            height: 35px;
+            width: 1px;
+            background: $grey;
+        }
+        &__content h3 {
+            font-size: $small-font-size;
+        }
+        &__content span {
+            font-weight: bolder;
+            font-size: $meduim-font-size;
+        }
+        &__schools {
+            border-left: 4px solid $accent-3;
+        }
+        &__students {
+            border-left: 4px solid $primary;
+        }
+        &__teachers {
+            border-left: 4px solid $accent-2;
+        }
+        &__parents {
+            border-left: 4px solid $accent-1;
+        }
+    }
+}

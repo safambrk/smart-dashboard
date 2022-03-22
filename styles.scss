@@ -1,0 +1,46 @@
+@import './styles/variables.scss';
+@import './styles/layout.scss';
+@import './styles/header.scss';
+@import './styles/sidenav.scss';
+@import './styles/analytics.scss';
+@import './styles/divers.scss';
+@import './styles/calendar.scss';
+@import './styles/performance.scss';
+@import './styles/notification.scss';
+@import './styles/score.scss';
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: $font-family;
+    font-size: $regular-font-size;
+    font-weight: lighter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    text-transform: capitalize;
+}
